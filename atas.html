@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Bagian Atas</title>
+    </head>
+
+    <body background="media/header.jpg">
+        <div id="jam" style="border: 3px solid rgb(165, 158, 158); width: 
+        120px; border-radius: 5px; box-shadow: 0px 0px 8px rgb(165, 158, 158); 
+        text-align: center; font-size: 30px;"></div>
+        
+        
+        <br>
+        <marquee>
+        <h1><caption><font face="Broadway" color="white">Kelompok 6 Kelas 1EB13</font></caption></h2>
+        </marquee>
+
+    <script>
+        setInterval(()=>{
+            const waktu = new Date();
+            const jam = waktu.getHours();
+            const menit = waktu.getMinutes();
+            const detik = waktu.getSeconds();
+            document.getElementById('jam').innerHTML = jam + ":"
+            + menit + ":" + detik;
+        
+        } ,1000);
+    </script>
+
+    </body>
+
+
+</html>
